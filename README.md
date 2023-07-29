@@ -6,6 +6,14 @@ To start dev server:
 2. Compile index.cljs and move it to public/js/index.mjs
 3. Start dev server. 
 
+Compile required after any file change.
+```
+npm run compile && npm run deploy-local
+```
 
-Repeat 2 when file changes. 
+Start web server
+```
+npm run start
+```
+
 
