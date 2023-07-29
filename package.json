@@ -4,7 +4,9 @@
   "description": "Demo of web components with squint",
   "main": "index.js",
   "scripts": {
-    "start": "web-dev-server --node-resolve --root-dir=public --open --watch"
+    "start": "web-dev-server --node-resolve --root-dir=public --open --watch",
+    "deploy-local": "rm -rf public/js/* && mv src/*.mjs public/js/",
+    "compile": "./node_modules/squint-cljs/node_cli.js compile src/index.cljs"
   },
   "author": "Sergey Shvets",
   "license": "EPL-1.0",
